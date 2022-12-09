@@ -49,13 +49,13 @@
             this.DgvLista.AllowUserToDeleteRows = false;
             this.DgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvLista.Location = new System.Drawing.Point(16, 76);
-            this.DgvLista.Margin = new System.Windows.Forms.Padding(4);
+            this.DgvLista.Location = new System.Drawing.Point(12, 62);
             this.DgvLista.MultiSelect = false;
             this.DgvLista.Name = "DgvLista";
             this.DgvLista.ReadOnly = true;
+            this.DgvLista.RowHeadersVisible = false;
             this.DgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvLista.Size = new System.Drawing.Size(1035, 185);
+            this.DgvLista.Size = new System.Drawing.Size(776, 150);
             this.DgvLista.TabIndex = 0;
             this.DgvLista.VirtualMode = true;
             this.DgvLista.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvLista_CellClick);
@@ -64,19 +64,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Buscar";
             // 
             // TxtBusqueda
             // 
-            this.TxtBusqueda.Location = new System.Drawing.Point(16, 36);
-            this.TxtBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtBusqueda.Location = new System.Drawing.Point(12, 29);
             this.TxtBusqueda.Name = "TxtBusqueda";
-            this.TxtBusqueda.Size = new System.Drawing.Size(253, 22);
+            this.TxtBusqueda.Size = new System.Drawing.Size(191, 20);
             this.TxtBusqueda.TabIndex = 2;
             this.TxtBusqueda.TextChanged += new System.EventHandler(this.TxtBusqueda_TextChanged);
             // 
@@ -85,10 +83,9 @@
             this.CboxVerActivos.AutoSize = true;
             this.CboxVerActivos.Checked = true;
             this.CboxVerActivos.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CboxVerActivos.Location = new System.Drawing.Point(944, 39);
-            this.CboxVerActivos.Margin = new System.Windows.Forms.Padding(4);
+            this.CboxVerActivos.Location = new System.Drawing.Point(708, 32);
             this.CboxVerActivos.Name = "CboxVerActivos";
-            this.CboxVerActivos.Size = new System.Drawing.Size(94, 20);
+            this.CboxVerActivos.Size = new System.Drawing.Size(80, 17);
             this.CboxVerActivos.TabIndex = 3;
             this.CboxVerActivos.Text = "Ver Activos";
             this.CboxVerActivos.UseVisualStyleBackColor = true;
@@ -96,10 +93,9 @@
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.Location = new System.Drawing.Point(16, 511);
-            this.BtnGuardar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnGuardar.Location = new System.Drawing.Point(12, 415);
             this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(100, 28);
+            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
             this.BtnGuardar.TabIndex = 4;
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.UseVisualStyleBackColor = true;
@@ -107,10 +103,9 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(124, 511);
-            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnEliminar.Location = new System.Drawing.Point(93, 415);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(100, 28);
+            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
             this.BtnEliminar.TabIndex = 5;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
@@ -118,10 +113,9 @@
             // 
             // BtnLimpiar
             // 
-            this.BtnLimpiar.Location = new System.Drawing.Point(232, 511);
-            this.BtnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnLimpiar.Location = new System.Drawing.Point(174, 415);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(100, 28);
+            this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
             this.BtnLimpiar.TabIndex = 6;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
@@ -129,10 +123,9 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(951, 511);
-            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnCancelar.Location = new System.Drawing.Point(713, 415);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(100, 28);
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
             this.BtnCancelar.TabIndex = 7;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
@@ -142,39 +135,35 @@
             // 
             this.groupBox1.Controls.Add(this.TxtNombre);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(16, 286);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(12, 232);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1035, 203);
+            this.groupBox1.Size = new System.Drawing.Size(776, 165);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Elementos";
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(51, 71);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtNombre.Location = new System.Drawing.Point(38, 58);
             this.TxtNombre.MaxLength = 256;
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(363, 22);
+            this.TxtNombre.Size = new System.Drawing.Size(273, 20);
             this.TxtNombre.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 52);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(35, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 16);
+            this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nombre Categoría";
             // 
             // FrmCategoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.BtnLimpiar);
@@ -184,7 +173,6 @@
             this.Controls.Add(this.TxtBusqueda);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DgvLista);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCategoria";
