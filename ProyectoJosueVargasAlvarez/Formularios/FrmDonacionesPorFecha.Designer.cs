@@ -33,6 +33,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnGenerar = new System.Windows.Forms.Button();
+            this.DgvLista = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvLista)).BeginInit();
             this.SuspendLayout();
             // 
             // DtpFin
@@ -79,11 +81,29 @@
             this.BtnGenerar.UseVisualStyleBackColor = true;
             this.BtnGenerar.Click += new System.EventHandler(this.BtnGenerar_Click);
             // 
+            // DgvLista
+            // 
+            this.DgvLista.AllowUserToAddRows = false;
+            this.DgvLista.AllowUserToDeleteRows = false;
+            this.DgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvLista.Location = new System.Drawing.Point(253, 46);
+            this.DgvLista.MultiSelect = false;
+            this.DgvLista.Name = "DgvLista";
+            this.DgvLista.ReadOnly = true;
+            this.DgvLista.RowHeadersVisible = false;
+            this.DgvLista.RowHeadersWidth = 51;
+            this.DgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvLista.Size = new System.Drawing.Size(722, 150);
+            this.DgvLista.TabIndex = 43;
+            this.DgvLista.VirtualMode = true;
+            // 
             // FrmDonacionesPorFecha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 239);
+            this.ClientSize = new System.Drawing.Size(1000, 239);
+            this.Controls.Add(this.DgvLista);
             this.Controls.Add(this.BtnGenerar);
             this.Controls.Add(this.DtpFin);
             this.Controls.Add(this.DtpInicio);
@@ -95,6 +115,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte por fechas";
             this.Load += new System.EventHandler(this.FrmDonacionesPorFecha_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvLista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,5 +128,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnGenerar;
+        private System.Windows.Forms.DataGridView DgvLista;
     }
 }

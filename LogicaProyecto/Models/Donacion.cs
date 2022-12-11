@@ -145,5 +145,26 @@ namespace LogicaProyecto.Models
             return Resultado;
         }
 
+        //lista las Donaciones segun fecha
+        public DataTable VerificarDonacionPorFechaListar(DateTime Inicio, DateTime Fin)
+        {
+            DataTable Resultado = new DataTable();
+
+
+            Conexion MiCnn = new Conexion();
+
+            MiCnn.ListaParametros.Add(new SqlParameter("@Inicio", Inicio));
+            MiCnn.ListaParametros.Add(new SqlParameter("@Fin", Fin));
+
+            DataTable Consulta = MiCnn.EjecutarSelect("SpDonacionFechasListar");
+
+            if (Consulta != null && Consulta.Rows.Count > 0)
+            {
+                Resultado = Consulta;
+            }
+
+            return Resultado;
+        }
+
     }
 }
